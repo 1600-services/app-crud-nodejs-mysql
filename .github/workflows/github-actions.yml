@@ -25,4 +25,4 @@ jobs:
       run: cd app
 
     - name: start
-      run: npm run dev
+      run: npm install && npm run dev
