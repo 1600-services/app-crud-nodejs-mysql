@@ -1,0 +1,9 @@
+appName: crud
+namespace: default
+configmap:
+  name: helm-app-configmap
+  data:
+    TITLE: "Crud whith helm"
+image:
+  name: devops1600/crud-node
+  tag: v0.3

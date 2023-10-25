@@ -1,0 +1,7 @@
+namespace: prod
+configmap:
+  data:
+    TITLE: "Crud whith helm - PROD"
+image:
+  name: devops1600/crud-node
+  tag: v0.3
