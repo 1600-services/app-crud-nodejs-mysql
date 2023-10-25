@@ -22,7 +22,7 @@ app.use(morgan('dev'));
 app.use(myConnection(mysql, {
 // for docker
 //    host: 'mysql',
-//for localhost
+// for localhost
 //    host: 'localhost',
 // for kubernetes
     host: process.env.HOSTDB,

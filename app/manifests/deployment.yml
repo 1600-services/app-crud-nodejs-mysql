@@ -12,6 +12,8 @@ spec:
     metadata:
       labels:
         app: my-app
+      annotations:
+        checksum/config: "43bdd313b94dd340846c77ca4addedd8f9bc249e68f1b7a47c0d11266e24f5b0" #Force to update pod if something is changed in the configMap file        
     spec:
       containers:
         - name: crud
