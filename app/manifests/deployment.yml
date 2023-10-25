@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: crud
-          image: devops1600/crud-node:v0.10
+          image: devops1600/crud-node:v0.12
           command: ["./start.sh"]
           ports:
             - containerPort: 3000
