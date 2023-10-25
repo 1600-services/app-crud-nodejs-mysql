@@ -20,4 +20,9 @@ jobs:
 
     - name: ls
       run: ls
+    
+    - name: cd app
+      run: cd app
 
+    - name: start
+      run: npm run dev
