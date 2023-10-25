@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   namespace: local
   name: my-config
-data:
+data: 
   TITLE: "Crud-K8s-HELM"
-  HOSTDB: "mysql-svc.default.svc.cluster.local"
+  HOSTDB: "mysql-svc.local.svc.cluster.local"
   PORTDB: "3306"
