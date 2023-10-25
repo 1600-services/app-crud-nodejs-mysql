@@ -18,14 +18,11 @@ jobs:
       with:
         node-version: 14
 
-    - name: Install dependencies
-      run: npm install
+    - name: ls
+      run: ls
+    
+    - name: cd app
+      run: cd app
 
-    - name: Build
-      run: npm run build
-
-    - name: Deploy to Kubernetes
-      env:
-        KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
-      run: |
-        kubectl apply -f deployment.yaml
+    - name: start
+      run: npm install && npm run dev
