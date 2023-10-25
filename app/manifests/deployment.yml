@@ -12,8 +12,6 @@ spec:
     metadata:
       labels:
         app: my-app
-      annotations:
-        checksum/config: {{ include (print $.Template.BasePath "/configmap.yml") . | sha256sum }} #Force to update pod if something is changed in the configMap file
     spec:
       containers:
         - name: crud
