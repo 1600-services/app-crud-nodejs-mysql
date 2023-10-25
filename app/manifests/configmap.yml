@@ -4,6 +4,6 @@ metadata:
   namespace: local
   name: my-config
 data: 
-  TITLE: "Crud-K8s-HELM-v2"
+  TITLE: "Crud-K8s-HELM-v1"
   HOSTDB: "mysql-svc.local.svc.cluster.local"
   PORTDB: "3306"
