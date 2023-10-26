@@ -23,3 +23,5 @@ jobs:
 
     - name: start test
       run: cd app/test && ls && npm install && npm test
+
+
