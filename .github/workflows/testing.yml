@@ -22,7 +22,11 @@ jobs:
       run: cd app && npm install 
 
     - name: Lint
-      run: cd app && npm run eslint 
+      run: cd app && npm install eslint --save-dev
+
+
+    - name: Lint
+      run: cd app && npm eslint .
 
     - name: start test
       run: cd app/test && ls && npm install && npm test
