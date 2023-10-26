@@ -1,6 +1,8 @@
 #--------------------NODE-JS---------------------------------
 node_modules
-
+cypress/plugins
+cypress/support
+cypress/videos
 #--------------------TERRAFORM---------------------------------
 # Local .terraform directories
 **/.terraform/*

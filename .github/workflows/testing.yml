@@ -24,4 +24,16 @@ jobs:
     - name: start test
       run: cd app/test && ls && npm install && npm test
 
+#   - name: Lint
+#     run: cd app && npm install eslint --save-dev
 
+#   - name: Lint
+#     run: cd app && npm eslint .
+
+
+    - name: e2e cypress test
+      uses: cypress-io/github-actions@v2
+      with:
+        command: npm run test:e2e
+        start: npm run start-test
+        wait-on: http://localhost:3000

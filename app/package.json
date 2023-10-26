@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/app.js"
+    "dev": "nodemon src/app.js",
+    "start-test": "NODE_ENV=test node src/app.js",
+    "test:e2e": "npx cypress run"
   },
   "keywords": [],
   "author": "",
