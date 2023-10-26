@@ -22,7 +22,7 @@ jobs:
       run: ls
     
     - name: cd app/test
-      run: cd app/test
+      run: cd app/test && ls
 
     - name: start
-      run: ls && app/test && npm install && npm test
+      run: ls && app/test && ls && npm install && npm test
