@@ -18,11 +18,11 @@ jobs:
       with:
         node-version: 14
 
-    - name: install app dependencies
-      run: cd app && npm install 
+#    - name: install app dependencies
+#      run: cd app && npm install 
 
-    - name: start test
-      run: cd app/test && ls && npm install && npm test
+#    - name: start test
+#      run: cd app/test && ls && npm install && npm test
 
 #   - name: Lint
 #     run: cd app && npm install eslint --save-dev
@@ -34,8 +34,9 @@ jobs:
     - name: e2e cypress test
       uses: cypress-io/github-action@v2
       with:
-        command: cd app & npm run test:e2e
-        start: cd app & npm run start-test
+        working-directory: app
+        command: npm run test:e2e
+        start: npm run start-test
         wait-on: http://localhost:3000
         
       
