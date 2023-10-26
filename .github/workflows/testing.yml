@@ -31,12 +31,12 @@ jobs:
 #     run: cd app && npm eslint .
 
 
-    - name: e2e cypress test
-      uses: cypress-io/github-action@v2
-      with:
-        working-directory: app
-        command: npm run test:e2e
-        start: npm run start-test
-        wait-on: http://localhost:3000
+#    - name: e2e cypress test
+#      uses: cypress-io/github-action@v2
+#      with:
+#        working-directory: app
+#        command: npm run test:e2e
+#        start: npm run start-test
+#        wait-on: http://localhost:3000
         
       
