@@ -32,7 +32,7 @@ jobs:
 
 
     - name: e2e cypress test
-      uses: cypress-io/github-actions@v2
+      uses: cypress-io/github-action@v2
       with:
         command: npm run test:e2e
         start: npm run start-test
