@@ -25,4 +25,4 @@ jobs:
       run: cd app/test && ls
 
     - name: start
-      run: ls && app/test && ls && npm install && npm test
+      run: ls && cd app/test && ls && npm install && npm test
