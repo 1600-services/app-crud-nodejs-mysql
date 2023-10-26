@@ -21,6 +21,9 @@ jobs:
     - name: install app dependencies
       run: cd app && npm install 
 
+    - name: Lint
+      run: cd app && npm run eslint 
+
     - name: start test
       run: cd app/test && ls && npm install && npm test
 
